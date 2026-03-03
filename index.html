@@ -1,68 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Git Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium UI</title>
+<h2>Feature Kee update</h2>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
 
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            width: 350px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    backdrop-filter: blur(10px);
+}
 
-        .card h1 {
-            margin-bottom: 10px;
-            color: #333;
-        }
+nav h2 {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
-        .card p {
-            margin-bottom: 20px;
-            color: #666;
-        }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #2a5298;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .btn:hover {
-            background-color: #1e3c72;
-        }
-    </style>
+nav ul li:hover {
+    color: #00e5ff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 85vh;
+    padding: 0 10%;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn-primary {
+    background: #00e5ff;
+    color: black;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00e5ff;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #00e5ff;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #00e5ff;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="card">
-        <h1>Welcome 👋</h1>
-        <p>This is my Git learning project.</p>
-        <a href="#" class="btn">Explore</a>
+<nav>
+    <h2>SAGA</h2>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Building the Future with Code 🚀</h1>
+        <p>This premium UI design demonstrates modern glassmorphism, gradient themes, and professional layout styling.</p>
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-secondary">Learn More</button>
     </div>
+</section>
+
+<footer>
+    © 2026 Saravana Ganesh | Premium Git Project
+</footer>
 
 </body>
 </html>
